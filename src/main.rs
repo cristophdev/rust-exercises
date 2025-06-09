@@ -1,5 +1,5 @@
-mod helloworld;
+mod reverse_string;
 
 fn main() {
-    println!("{}", helloworld::hello());
+    println!("{}", reverse_string::reverse("hello"));
 }
