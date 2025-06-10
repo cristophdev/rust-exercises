@@ -1,13 +1,6 @@
-pub mod armstrong_numbers;
+pub mod leap_year;
 
 fn main() {
-    let numbers = [9, 10, 153, 154, 370, 9474];
-
-    for &number in numbers.iter() {
-        println!(
-            "{} is an Armstrong number? {}",
-            number,
-            armstrong_numbers::is_armstrong_number(number)
-        );
-    }
+    let year = 2024;
+    println!("Is {} a leap year? {}", year, leap_year::is_leap_year(year));
 }
