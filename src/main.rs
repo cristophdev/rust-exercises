@@ -1,11 +1,6 @@
-use time::{PrimitiveDateTime, Date, Time};
-mod gigasecond;
+pub mod grains;
 
 fn main() {
-    let start = PrimitiveDateTime::new(
-        Date::from_calendar_date(2024, time::Month::June, 9).unwrap(),
-        Time::from_hms(20, 0, 0).unwrap(),
-    );
-
-    println!("{}", gigasecond::after(start));
+    println!("Grains on square 1: {}", grains::square(1));
+    println!("Total grains on the chessboard: {}", grains::total());
 }
